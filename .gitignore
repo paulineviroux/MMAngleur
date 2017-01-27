@@ -1,0 +1,9 @@
+source
+node_modules
+
+
+wordpress/wp-content/*
+!wordpress/wp-content/themes/
+wordpress/wp-content/themes/mma/assets/fonts
+wordpress/wp-includes/*
+wordpress/wp-admin/*

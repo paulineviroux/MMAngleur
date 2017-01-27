@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head> 
+    <meta charset="utf-8">
+    <meta name="description" content="Site du centre de santé intégré d'Angleur">
+    <meta name="keywords" content="maison médicale, angleur, soins, médecine, centre de santé intégré, csi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSI Angleur</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="header__backhome"><img class="header__backhomeLogo" src="images/logo2.png" alt=""></a>
+        <div class="banner">
+            <h1 class="banner__title">Centre de Santé Intégré d‘Angleur</h1>
+            <span class="banner__span">Pour une santé accessible</span>
+        </div>
+        <nav class="main-nav">
+            <h2 class="hidden">Navigation principale</h2>
+            <input id="toggle-secondNav" class="main-nav__input" type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul class="main-nav__list">
+                <li class="main-nav__item"><a class="main-nav__link main-nav__linkWho" href="html/who.html">Qui sommes-nous&nbsp;?</a></li>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__linkGarde" href="html/garde.html">Garde</a></li></li>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__linkHow" href="html/how.html">Fonctionnement</a></li>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__linkActi" href="html/activites.html">Fiches</a></li>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__linkContact" href="html/contact.html">Contact</a></li>
+                <li class="main-nav__item"><a class="main-nav__link main-nav__linkLinks" href="html/links.html">Liens utiles</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="main">
+        <h2 class="hidden">Contenu principal</h2>
+        <div class="presentation">
+            <p class="presentation__text">La maison médicale d’Angleur a été fondée en 1984 par le Docteur Dupont et le Docteur Leclair. Le CSI d’Angleur défend le principe d’une médecine accessible à tous. Les soins sont accessibles mais non seulement de qualité. La maison médicale d’Angleur vous propose des soins de médecines générale, de kinésithérapie, ...</p>
+        </div>
+        <div class="infos">
+            <div class="contact">
+                <div class="contact__container">
+                    <h3 class="contact__title">Nous contacter</h3>
+                    <p class="contact__address">Rue Vaudrée, 48 4031 Angleur, BE</p>
+                    <a class="contact__phone" href="tel:+3242218888">+32 (0)4 221 88 88</a>
+                    <a class="contact__mail" href="mailto:info@csi.be">info@csi.be</a>
+                </div>
+                
+            </div>
+            <div class="timetable">
+                <div class="timetable__container">
+                    <h3 class="timetable__title">Nos horaires</h3>
+                    <table class="timetable__table">
+                        <tr class="timetable__tr">
+                            <td class="timetable__td">Lundi :</td>
+                            <td>9 h - 20 h</td>
+                        </tr>
+                        <tr class="timetable__tr">
+                            <td class="timetable__td">Mardi :</td>
+                            <td>9h - 20h</td>
+                        </tr>
+                        <tr class="timetable__tr">
+                            <td class="timetable__td">Mercredi :</td>
+                            <td>9h - 20h</td>
+                        </tr>
+                        <tr class="timetable__tr">
+                            <td class="timetable__td">Jeudi :</td>
+                            <td>9h - 20h</td>
+                        </tr>
+                        <tr class="timetable__tr">
+                            <td class="timetable__td">Vendredi :</td>
+                            <td>9h - 20h</td>
+                        </tr>
+                        <tr class="timetable__tr">
+                            <td class="timetable__td">Samedi :</td>
+                            <td>9h - 20h</td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </section> 
+    <footer class="footer">
+        <h2 class="hidden">Informations du footer</h2>
+        <section class="nav-footer">
+            <h3 class="hidden">Navigation du footer</h3>
+            <nav class="nav-footer__nav">
+                <ul class="nav-footer__list">
+                    <li class="nav-footer__item"><a href="html/contact.html" class="nav-footer__link nav-footer__linkHours">Horaires médecins</a></li>
+                    <li class="nav-footer__item"><a href="html/contact.html" class="nav-footer__link nav-footer__linkContact">Contact</a></li>
+                    <li class="nav-footer__item"><a href="html/garde.html" class="nav-footer__link nav-footer__linkGarde">Service de garde</a></li>
+                    <li class="nav-footer__item"><a href="html/activites.html" class="nav-footer__link nav-footer__linkActi">Activités</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="infos-footer">
+            <h3 class="hidden">Informations de contact</h3>
+            <div class="infos-footer__item">
+                <p class="infos-footer__address">Rue Vaudrée, 48 4031 Angleur, BE</p>
+            </div>
+            <div class="infos-footer__item">
+                <a href="mailto:info@csi.be" class="infos-footer__mail">info@csi.be</a>
+            </div>
+            <div class="infos-footer__item">
+                <a href="tel:003242218888" class="infos-footer__tel">+32 (0)4 221 88 88</a>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h3 class="hidden">Inscription à la newsletter</h3>
+            <form action="" class="newsletter__form">
+                <fieldset >
+                    <div class="newsletter__container">
+                       <legend class="newsletter__label">S'inscrire à la newsletter</legend>
+                        <label for="newsletter" class="hidden">Email</label>
+                        <input type="text" id="newsletter" class="newsletter__input" placeholder="jean-jacques@goldman.be">
+                        <input type="submit" value="Je m'inscris" class="newsletter__submit"> 
+                    </div>   
+                </fieldset>    
+            </form>
+            <small class="mention">Design by Pauline Viroux. 2016</small>
+        </section> 
+    </footer>
+</body>
+</html>
