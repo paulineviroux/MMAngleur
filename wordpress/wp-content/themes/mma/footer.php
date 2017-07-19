@@ -7,7 +7,7 @@
                 <h4 role="heading" aria-level="4" class="hidden">Navigation secondaire</h4>
                 <ul class="nav-footer__list">
                     <?php foreach (b_get_menu_items( 'nav-footer' ) as $navItem) : ?>
-                        <li class="nav-footer__item <?= $navItem->icon ?>"><a href="<?php echo $navItem->url; ?>" class="nav-footer__link"><?php echo $navItem->label; ?></a></li>
+                        <a href="<?php echo $navItem->url; ?>" class="nav-footer__link"><li class="nav-footer__item <?= $navItem->icon ?>"><?php echo $navItem->label; ?></li></a>
                     <?php endforeach; ?>
                 </ul>
             </nav>
@@ -26,7 +26,9 @@
         </section>
         <section class="newsletter">
             <h3 role="heading" aria-level="3" class="hidden">Inscription à la newsletter</h3>
+
             <form action="" class="newsletter__form">
+            <p class="newsletter__intro">Restez informés en vous inscrivant à notre newsletter hebdomadaire.</p>
               <fieldset>
                 <div class="newsletter__container">
                   <legend class="newsletter__label">S'inscrire à la newsletter</legend>

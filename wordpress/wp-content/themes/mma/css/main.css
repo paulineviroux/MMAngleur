@@ -504,6 +504,13 @@ body {
   .footer .newsletter {
     background-color: #00A09A;
     text-align: center; }
+    .footer .newsletter__intro {
+      color: #fff;
+      font-size: 0.9rem;
+      padding-bottom: 1.5rem;
+      font-weight: 300;
+      width: 300px;
+      margin: 0 auto; }
     .footer .newsletter__form {
       padding: 2rem 0 1.5rem; }
     .footer .newsletter__container {
@@ -529,7 +536,7 @@ body {
       text-transform: uppercase;
       font-weight: 200;
       font-size: 1.1rem;
-      padding: .3rem .5rem;
+      padding: .35rem .6rem;
       vertical-align: middle;
       font-family: 'raleway';
       cursor: pointer; }

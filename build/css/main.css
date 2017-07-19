@@ -504,6 +504,10 @@ body {
   .footer .newsletter {
     background-color: #00A09A;
     text-align: center; }
+    .footer .newsletter__intro {
+      color: #fff;
+      font-size: 0.9rem;
+      padding-bottom: 1.5rem; }
     .footer .newsletter__form {
       padding: 2rem 0 1.5rem; }
     .footer .newsletter__container {
