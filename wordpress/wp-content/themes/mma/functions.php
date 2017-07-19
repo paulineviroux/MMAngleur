@@ -31,6 +31,20 @@ register_post_type( 'project', [
         'has_archive' => true
     ] );
 
+register_post_type( 'link', [
+        'label' => __('Liens', 'c'),
+        'labels' => [
+            'singular_name' => __('Lien', 'c'),
+            'add_new' => __('Ajouter un nouveau lien', 'c')
+        ],
+        'description' => __('Liens utiles', 'b'),
+        'public' => true,
+        'menu_position' => 6,
+        'menu_icon' => 'dashicons-paperclip',
+        'supports' => ['title', 'editor', 'thumbnail'],
+        'has_archive' => true
+    ] );
+
 
 register_nav_menus( array(
     'main-nav' => 'Menu principal, affiché dans le header.',

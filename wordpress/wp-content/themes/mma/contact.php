@@ -26,7 +26,7 @@ get_header();
     </header>
     <section class="mainContact">
         <h2 role="heading" aria-level="2" class="hidden">Contenu principal</h2>
-        <section class="cardDoctor">
+        <section class="cardDoctor">  
             <h3 role="heading" aria-level="3" class="cardDoctor__title">Thérapeutes et horaires</h3>
             <?php $posts = new WP_Query( ['post_type' => 'project'] ); if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post(); ?>
                 <div class="cardDoctor__container">

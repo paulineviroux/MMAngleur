@@ -904,6 +904,9 @@ body {
     font-weight: 300;
     list-style-type: circle;
     margin-bottom: 1.3rem; }
+  .mainLinks__img {
+    width: 130px;
+    height: auto; }
   .mainLinks a {
     font-weight: 600;
     color: #0D687C; }

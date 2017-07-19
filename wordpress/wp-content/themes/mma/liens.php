@@ -28,11 +28,19 @@ get_header();
         <h2 role="heading" aria-level="2" class="hidden">Contenu principal</h2>
         <div class="mainLinks__container">
             <h3 role="heading" aria-level="3" class="mainLinks__title">Quelques liens utiles :</h3>    
-            <?php if(have_posts()):?>
-            <?php while ( have_posts() ) : the_post(); ?>
-                <?php the_content(); ?>
-            <?php endwhile;?>
-            <?php endif;?>
+            <?php $posts = new WP_Query( ['post_type' => 'link'] ); if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post(); ?>
+                <div class="mainLinks__link"> 
+                    <div class="mainLinks__container1">
+                        <a href="<?php the_field('link'); ?>"><img src="<?php the_field( 'logo' ); ?>" alt="Logo de <?php the_title(); ?>" class="mainLinks__img"></a>
+                    </div>
+                    <div class="mainLinks__container2">
+                        <p class="mainLinks__name"><?php the_field('name'); ?> </p>
+                        <a href="<?php the_field('link'); ?>"><?php the_field('link'); ?></a>
+                        <p class="mainLinks__description"><?php the_field('description'); ?></p>
+
+                    </div>
+                </div>
+            <?php endwhile; endif; ?>
         </div>
 
 <?php get_footer();
