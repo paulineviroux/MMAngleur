@@ -29,6 +29,7 @@ get_header();
         <?php if(have_posts()):?>
         <?php while ( have_posts() ) : the_post(); ?>
             <?php echo get_field('intro'); ?>
+            <img class="textTemplate__largeImg" src="<?php the_field( 'img' ); ?>" alt="">
         <?php endwhile;?>
         <?php endif;?>
         <div class="textTemplate__container">

@@ -35,6 +35,15 @@ get_header();
                 </div>
             <?php endwhile; endif; ?>
         </div>
-        <a class="textTemplate__link" href="">Retrouvez l'horaire des médecins de garde <span class="textTemplate__icon"></span></a>
-
+        
+    </section>
+    <section class="urgency">
+        <div class="urgency__container">
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <h2 role="heading" aria-level="2" class="urgency__title">Numéros d'urgence</h2>
+                    <?php the_field( 'numero_urgence' ) ;?>
+            <?php endwhile; endif; ?>
+            <a class="urgency__link" href="">Retrouvez l'horaire des médecins de garde <span class="textTemplate__icon"></span></a>
+        </div>
+    </section>
 <?php get_footer();

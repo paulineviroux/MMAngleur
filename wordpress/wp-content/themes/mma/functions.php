@@ -6,6 +6,7 @@
  */
 add_theme_support( 'post-thumbnails' );
 
+
 register_taxonomy( 'project-type', 'project',[
         'label' => __('Types de projets', 'b'),
         'labels' =>[

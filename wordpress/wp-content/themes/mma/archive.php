@@ -26,13 +26,18 @@ get_header();
     </header>
     <section class="mainSheets">
         <h2 role="heading" aria-level="2" class="hidden">Contenu principal</h2>
-        <?php $posts = new WP_Query( ['post_type' => 'post'] );
-            if ( $posts->have_posts() ): while ( $posts->have_posts() ): $posts->the_post(); ?>
+        <?php $paged = get_query_var('paged') ? get_query_var('paged') : 1;?>
+          <?php $args = array( 'post_type' => 'post', 'posts_per_page' => 3,'paged' => $paged );
+          $loop = new WP_Query( $args );
+          while ( $loop->have_posts() ) : $loop->the_post();?>
+
             <div class="mainSheets__container">
                 <img src="<?php the_field( 'small_image' ); ?>" alt="" class="mainSheets__img">
                 <h3 role="heading" aria-level="3" class="mainSheets__title"><?php the_title(); ?></h3>
                 <?php the_field( 'small_description' ); ?>
-                <a href="<?php the_permalink(); ?>" class="maintSheets__link" title="Lire la suite de la fiche">Lire la suite...</a>
+                <a href="<?php the_permalink(); ?>" class="maintSheets__link" title="Lire la suite de la fiche">Lire la suite... <span class="hidden">de l'article concernant le <?php the_title(); ?></span></a>
             </div>  
-        <?php endwhile; endif; ?> 
+        <?php endwhile; ?> 
+        <?php wp_pagenavi( array( 'query' => $loop ) ); ?>
+
 <?php get_footer();

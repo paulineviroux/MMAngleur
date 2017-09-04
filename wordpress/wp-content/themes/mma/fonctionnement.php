@@ -35,4 +35,5 @@ get_header();
                 </div>
             <?php endwhile; endif; ?>
         </div>
+        <div id="btt" onclick='scr_top.init()'></div>
 <?php get_footer();

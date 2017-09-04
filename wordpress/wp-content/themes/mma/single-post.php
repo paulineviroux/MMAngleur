@@ -21,7 +21,7 @@ get_header();
                 <?php foreach (b_get_menu_items( 'main-nav' ) as $navItem) : ?>
                     <li class="main-nav__item <?= $navItem->icon ?>"><a href="<?php echo $navItem->url; ?>" class="main-nav__link"><?php echo $navItem->label; ?></a></li>
                 <?php endforeach; ?>
-            </ul>
+            </ul> 
         </nav>
     </header>
     <section class="textTemplate">
@@ -40,5 +40,7 @@ get_header();
                 <?php endwhile; endif; ?>
             </div>
         <?php endwhile; endif; ?> 
-
+        <a href="<?php bloginfo('url'); ?>/fiches/" class="textTemplate__back">Retour aux fiches</a>
+        <p class="textTemplate__next"><?php next_post_link( '%link', 'Article suivant '); ?><p>
+        
 <?php get_footer();
